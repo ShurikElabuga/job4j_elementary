@@ -26,7 +26,7 @@ class SqAreaTest {
 
     @Test
     void whenP16K3Square18() {
-        int expected = 18;
+        int expected = 12;
         int p = 16;
         double k = 3;
         double out = SqArea.square(p, k);
