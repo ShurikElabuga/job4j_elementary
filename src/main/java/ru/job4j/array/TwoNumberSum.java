@@ -11,9 +11,8 @@ public class TwoNumberSum {
                 rsl[0] = i;
                 rsl[1] = j;
                 break;
-            } else if (j - i == 1) {
+            } else if ((array[i]) + array[j] < target) {
                 i++;
-                j = array.length - 1;
             } else {
                 j--;
             }
