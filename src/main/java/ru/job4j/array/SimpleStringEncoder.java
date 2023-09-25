@@ -17,15 +17,8 @@ public class SimpleStringEncoder {
                 symbol = input.charAt(i);
                 counter = 1;
             }
-            if (i == input.length() - 1) {
-                if (counter == 1) {
-                    result = result + symbol;
-                } else {
-                    result = result + symbol + counter;
-                }
-            }
-
         }
+            result = (counter == 1) ? result + symbol : result + symbol + counter;
         return result;
     }
 }
