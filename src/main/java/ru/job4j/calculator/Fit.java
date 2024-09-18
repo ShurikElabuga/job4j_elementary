@@ -9,17 +9,20 @@ public class Fit {
             System.out.println("Проверьте корректнойсть роста человека");
         }
     }
+
     public static double manWeight(short height) {
         checkHeight(height);
         double calculateWtight = (height - man) * 1.15;
         return calculateWtight;
     }
 
+
     public static double womanWeight(short height) {
         checkHeight(height);
         double calculateWtight = (height - woman) * 1.15;
         return calculateWtight;
     }
+
 
     public static void main(String[] args) {
         short height = 187;
