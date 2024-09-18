@@ -16,13 +16,11 @@ public class Fit {
         return calculateWtight;
     }
 
-
     public static double womanWeight(short height) {
         checkHeight(height);
         double calculateWtight = (height - woman) * 1.15;
         return calculateWtight;
     }
-
 
     public static void main(String[] args) {
         short height = 187;
