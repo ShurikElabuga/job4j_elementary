@@ -1,14 +1,24 @@
 package ru.job4j.calculator;
 
 public class Fit {
+    private static int man = 100;
+    private static int woman = 110;
+
+    public static void checkHeight(short height) {
+        if (height < 150 || height > 220) {
+            System.out.println("Проверьте корректнойсть роста человека");
+        }
+    }
     public static double manWeight(short height) {
-        double rsl = (height - 100) * 1.15;
-        return rsl;
+        checkHeight(height);
+        double calculateWtight = (height - man) * 1.15;
+        return calculateWtight;
     }
 
     public static double womanWeight(short height) {
-        double rsl = (height - 110) * 1.15;
-        return rsl;
+        checkHeight(height);
+        double calculateWtight = (height - woman) * 1.15;
+        return calculateWtight;
     }
 
     public static void main(String[] args) {
